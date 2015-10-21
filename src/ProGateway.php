@@ -21,7 +21,7 @@ class ProGateway extends AbstractGateway
             'password' => '',
             'signature' => '',
             'testMode' => false,
-            //'buttonSource' => '',
+            'buttonSource' => '',
         );
     }
 
