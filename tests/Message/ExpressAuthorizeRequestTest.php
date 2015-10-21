@@ -140,6 +140,7 @@ class ExpressAuthorizeRequestTest extends TestCase
             'LOCALECODE' => 'EN',
             'CUSTOMERSERVICENUMBER' => '1-801-FLOWERS',
             'PAYMENTREQUEST_0_SELLERPAYPALACCOUNTID' => 'billing@example.com',
+            'BUTTONSOURCE' => null
         );
 
         $this->assertEquals($expected, $this->request->getData());

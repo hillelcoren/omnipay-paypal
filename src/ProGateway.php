@@ -21,7 +21,7 @@ class ProGateway extends AbstractGateway
             'password' => '',
             'signature' => '',
             'testMode' => false,
-            'buttonSource' => '',
+            //'buttonSource' => '',
         );
     }
 
@@ -64,7 +64,7 @@ class ProGateway extends AbstractGateway
     {
         return $this->setParameter('buttonSource', $value);
     }
-
+    
     public function authorize(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\PayPal\Message\ProAuthorizeRequest', $parameters);
